@@ -3,7 +3,7 @@
 [Shahaf E. Finder](https://shahaffind.github.io/), [Ron Shapira Weber](https://ronshapiraweber.github.io/), [Moshe Eliasof](https://science.ai.cam.ac.uk/team/moshe-eliasof), [Oren Freifeld](https://www.cs.bgu.ac.il/~orenfr/) and [Eran Treister](https://www.cs.bgu.ac.il/~erant/)
 
 ### How to use
-Import the model
+Import the model, for example:
 ```python
 from models.immpnn import IMMPNN
 
@@ -17,6 +17,8 @@ model = IMMPNN(
   conv_type='gcnconv',
 )
 ```
+
+Code for additional message-passing protocols, as well as ready-to-use code for all the experiments from the paper, will be released in the near future.
 
 ## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
