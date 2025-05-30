@@ -2,7 +2,21 @@
 
 [Shahaf E. Finder](https://shahaffind.github.io/), [Ron Shapira Weber](https://ronshapiraweber.github.io/), [Moshe Eliasof](https://science.ai.cam.ac.uk/team/moshe-eliasof), [Oren Freifeld](https://www.cs.bgu.ac.il/~orenfr/) and [Eran Treister](https://www.cs.bgu.ac.il/~erant/)
 
-:construction: The code will be uploaded soon :construction:
+### How to use
+Import the model
+```python
+from models.immpnn import IMMPNN
+
+model = IMMPNN(
+  in_channels=37,
+  hidden_channels=32,
+  out_channels=10,
+  num_layers=16,
+  scales=3,
+  dropout=0.2,
+  conv_type='gcnconv',
+)
+```
 
 ## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
