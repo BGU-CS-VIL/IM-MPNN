@@ -215,6 +215,9 @@ class InterleaveMLP(torch.nn.Module):
                 ) if i < self.scales else 0
             )
 
-            curr_batch.x = curr_batch.x + lower_scale_y + higher_scale_y
+            curr_batch.x_tag = curr_batch.x + lower_scale_y + higher_scale_y
+
+        for batch in batches_in_levels:
+            batch.x = batch.x_tag
 
         return batches_in_scales
