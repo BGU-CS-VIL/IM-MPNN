@@ -4,7 +4,7 @@ import torch_geometric.nn as pyg_nn
 from torch_scatter import scatter
 
 from .layers.gcn_conv_layer import GCNConvLayer
-# from .layers.gatedgcn_layer import GatedGCNLayer
+from .layers.gatedgcn_conv_layer import GatedGCNLayer
 # from .layers.gine_conv_layer import GINEConvLayer
 
 
@@ -134,8 +134,8 @@ class MultiscaleGraphConvLayer(torch.nn.Module):
     def build_conv_model(self, model_type):
         if model_type == 'gcnconv':
             return GCNConvLayer
-        # elif model_type == 'gatedgcnconv':
-        #     return GatedGCNLayer
+        elif model_type == 'gatedgcnconv':
+            return GatedGCNLayer
         # elif model_type == 'gineconv':
         #     return GINEConvLayer
         else:
