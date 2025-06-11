@@ -4,6 +4,9 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.23185-b31b1b.svg?style=flat)](https://arxiv.org/abs/2505.23185)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/improving-the-effective-receptive-field-of/node-classification-on-pascalvoc-sp-1)](https://paperswithcode.com/sota/node-classification-on-pascalvoc-sp-1?p=improving-the-effective-receptive-field-of)  
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/improving-the-effective-receptive-field-of/node-classification-on-coco-sp)](https://paperswithcode.com/sota/node-classification-on-coco-sp?p=improving-the-effective-receptive-field-of)
+
 ### How to use
 Example:
 ```python
